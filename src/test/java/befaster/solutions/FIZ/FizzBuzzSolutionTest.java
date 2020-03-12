@@ -60,7 +60,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkNumberIsDeluxe() {
-        assertEquals(true, fizzBuzzSolution.numberIsDeluxe(11));
+        assertEquals(true, fizzBuzzSolution.allDigitsInNumberAreSame(11));
     }
 
     @Test
@@ -84,3 +84,4 @@ public class FizzBuzzSolutionTest {
     }
 
 }
+

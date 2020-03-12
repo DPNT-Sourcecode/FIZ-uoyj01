@@ -22,7 +22,7 @@ public class FizzBuzzSolution {
             if (number % 15 == 0) {
                 output = "fizz buzz";
             }
-            if (numberIsDeluxe(number)) {
+            if (allDigitsInNumberAreSame(number)) {
                 String deluxeType;
                 if(number % 2 == 0) {
                     deluxeType = "deluxe";
@@ -56,7 +56,7 @@ public class FizzBuzzSolution {
         return false;
     }
 
-    public boolean numberIsDeluxe(int input) {
+    public boolean allDigitsInNumberAreSame(int input) {
         List<Integer> digits = new ArrayList<>();
         int prev = -1;
         if (input < 10){
@@ -84,4 +84,5 @@ public class FizzBuzzSolution {
         return true;
     }
 }
+
 
