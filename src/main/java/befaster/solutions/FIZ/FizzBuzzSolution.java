@@ -49,7 +49,10 @@ public class FizzBuzzSolution {
         List<Integer> digits = new ArrayList<>();
         int prev = -1;
         boolean isDeluxe = false;
-        while (input > 10) {
+        if (input < 10){
+            return false;
+        }
+        while (input > 0) {
             digits.add(input % 10);
             input = input / 10;
         }
@@ -72,3 +75,4 @@ public class FizzBuzzSolution {
         return isDeluxe;
     }
 }
+
