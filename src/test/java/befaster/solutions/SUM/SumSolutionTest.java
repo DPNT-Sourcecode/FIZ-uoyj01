@@ -23,9 +23,14 @@ public class SumSolutionTest {
 
     @Test
     public void checkInputIsPositive() throws Exception {
-        int input1 = 1;
-        assertThat(sum.checkInputIsPositive(input1), greaterThanOrEqualTo(0));
+        assertThat(sum.checkInputIsPositive(1), greaterThanOrEqualTo(0));
+    }
+
+    @Test
+    public void checkInputLessThanHundred(){
+        assertThat(sum.checkInputLessThanHundred(1), greaterThanOrEqualTo(0));
     }
 }
+
 
 

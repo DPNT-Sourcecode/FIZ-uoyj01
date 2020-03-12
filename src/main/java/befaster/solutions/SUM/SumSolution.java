@@ -15,7 +15,15 @@ public class SumSolution {
         }
         return input;
     }
+
+    public int checkInputLessThanHundred(int input) throws Exception {
+        if (input > 100) {
+            throw new Exception("Number cannot be greater than 100");
+        }
+        return input;
+    }
 }
+
 
 
 
