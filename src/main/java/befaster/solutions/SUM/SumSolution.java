@@ -5,12 +5,17 @@ import befaster.runner.SolutionNotImplementedException;
 @SuppressWarnings("unused")
 public class SumSolution {
 
-    public int compute(int x, int y) throws Exception {
-        checkInputIsPositive(x);
-        checkInputIsPositive(y);
-        checkInputLessThanHundred(x);
-        checkInputLessThanHundred(y);
-        return x + y;
+    public int compute(int x, int y) {
+        try {
+            checkInputIsPositive(x);
+            checkInputIsPositive(y);
+            checkInputLessThanHundred(x);
+            checkInputLessThanHundred(y);
+            return x + y;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public int checkInputIsPositive(int input) throws Exception {
@@ -27,6 +32,7 @@ public class SumSolution {
         return input;
     }
 }
+
 
 
 
