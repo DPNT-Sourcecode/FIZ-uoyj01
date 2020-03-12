@@ -82,5 +82,10 @@ public class FizzBuzzSolutionTest {
     public void checkInputHasAllSameDigitsAsThree() {
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(333));
     }
+
+    @Test
+    public void checkAllMatches() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(30));
+    }
 }
 
