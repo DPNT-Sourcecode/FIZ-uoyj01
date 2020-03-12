@@ -43,4 +43,9 @@ public class FizzBuzzSolutionTest {
         assertEquals("7", fizzBuzzSolution.fizzBuzz(7));
     }
 
+    @Test
+    public void checkInputHasNumberThree() {
+        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
+    }
+
 }
