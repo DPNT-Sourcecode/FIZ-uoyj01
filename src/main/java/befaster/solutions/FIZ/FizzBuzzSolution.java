@@ -8,4 +8,10 @@ public class FizzBuzzSolution {
         throw new SolutionNotImplementedException();
     }
 
+    public boolean checkInputLessThanMax(int input) {
+        if (input <= 9999){
+            return true;
+        }
+        return false;
+    }
 }
