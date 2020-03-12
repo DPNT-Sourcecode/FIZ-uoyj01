@@ -18,7 +18,7 @@ public class SumSolutionTest {
     }
 
     @Test
-    public void compute_sum() {
+    public void compute_sum() throws Exception {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
 
@@ -31,7 +31,13 @@ public class SumSolutionTest {
     public void checkInputLessThanHundred() throws Exception {
         assertEquals(1, sum.checkInputLessThanHundred(1));
     }
+
+    @Test(expected = Exception.class)
+    public void throwExceptionWhenInputNotPositive() throws Exception {
+        assertEquals(1, sum.checkInputIsPositive(1));
+    }
 }
+
 
 
 
