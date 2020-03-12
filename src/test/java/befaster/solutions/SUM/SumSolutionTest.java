@@ -22,9 +22,10 @@ public class SumSolutionTest {
     }
 
     @Test
-    public void checkInputIsPositive(){
+    public void checkInputIsPositive() throws Exception {
         int input1 = 1;
         assertThat(sum.checkInputIsPositive(input1), greaterThanOrEqualTo(0));
     }
 }
+
 

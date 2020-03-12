@@ -9,9 +9,13 @@ public class SumSolution {
         return x + y;
     }
 
-    public int checkInputIsPositive(int input) {
+    public int checkInputIsPositive(int input) throws Exception {
+        if (input < 0) {
+            throw new Exception("Negative number is not accepted");
+        }
         return input;
     }
 }
+
 
 
