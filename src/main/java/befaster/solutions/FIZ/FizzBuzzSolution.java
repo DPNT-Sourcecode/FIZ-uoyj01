@@ -2,6 +2,9 @@ package befaster.solutions.FIZ;
 
 import befaster.runner.SolutionNotImplementedException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
@@ -40,5 +43,32 @@ public class FizzBuzzSolution {
             return true;
         }
         return false;
+    }
+
+    public boolean checkIfNumberIsDeluxe(int input) {
+        List<Integer> digits = new ArrayList<>();
+        int prev = -1;
+        boolean isDeluxe = false;
+        while (input > 10) {
+            digits.add(input % 10);
+            input = input / 10;
+        }
+        if (digits.isEmpty()) {
+            return false;
+        } else {
+            for (int i = 0; i < digits.size(); i++) {
+                if (i == 0) {
+                    prev = digits.get(i);
+                } else {
+                    if (prev == digits.get(i)) {
+                        isDeluxe = true;
+                        prev = digits.get(i);
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+        return isDeluxe;
     }
 }
