@@ -48,7 +48,6 @@ public class FizzBuzzSolution {
     public boolean checkIfNumberIsDeluxe(int input) {
         List<Integer> digits = new ArrayList<>();
         int prev = -1;
-        boolean isDeluxe = false;
         if (input < 10){
             return false;
         }
@@ -64,7 +63,6 @@ public class FizzBuzzSolution {
                     prev = digits.get(i);
                 } else {
                     if (prev == digits.get(i)) {
-                        isDeluxe = true;
                         prev = digits.get(i);
                     } else {
                         return false;
@@ -72,7 +70,8 @@ public class FizzBuzzSolution {
                 }
             }
         }
-        return isDeluxe;
+        return true;
     }
 }
+
 
