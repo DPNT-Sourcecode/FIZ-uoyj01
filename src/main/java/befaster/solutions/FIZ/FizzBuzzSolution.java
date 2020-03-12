@@ -23,10 +23,16 @@ public class FizzBuzzSolution {
                 output = "fizz buzz";
             }
             if (numberIsDeluxe(number)) {
-                if (!output.isEmpty()) {
-                    output = output + " deluxe";
+                String deluxeType;
+                if(number % 2 == 0) {
+                    deluxeType = "deluxe";
                 } else {
-                    output = "deluxe";
+                    deluxeType = "fake deluxe";
+                }
+                if (!output.isEmpty()) {
+                    output = output + " " + deluxeType;
+                } else {
+                    output = deluxeType;
                 }
             }
             if (output.isEmpty()) {
@@ -78,3 +84,4 @@ public class FizzBuzzSolution {
         return true;
     }
 }
+

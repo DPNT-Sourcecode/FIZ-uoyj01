@@ -75,7 +75,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputHasAllSameDigitsAsFive() {
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
     }
 
     @Test
