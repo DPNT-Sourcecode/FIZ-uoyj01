@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
+import static org.junit.Assert.assertEquals;
 
 public class SumSolutionTest {
     private SumSolution sum;
@@ -23,14 +24,15 @@ public class SumSolutionTest {
 
     @Test
     public void checkInputIsPositive() throws Exception {
-        assertThat(sum.checkInputIsPositive(1), greaterThanOrEqualTo(0));
+        assertEquals(1, sum.checkInputIsPositive(1));
     }
 
     @Test
-    public void checkInputLessThanHundred(){
-        assertThat(sum.checkInputLessThanHundred(1), greaterThanOrEqualTo(0));
+    public void checkInputLessThanHundred() throws Exception {
+        assertEquals(1, sum.checkInputLessThanHundred(1));
     }
 }
+
 
 
 
