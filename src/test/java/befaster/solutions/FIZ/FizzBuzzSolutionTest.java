@@ -74,8 +74,8 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void checkInputIsJustADexuleNumber() {
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(888));
+    public void checkInputIsJustADeluxeNumber() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(88));
     }
 
 }
