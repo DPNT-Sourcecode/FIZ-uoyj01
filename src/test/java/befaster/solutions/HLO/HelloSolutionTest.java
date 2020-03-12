@@ -7,14 +7,15 @@ import static org.junit.Assert.*;
 
 public class HelloSolutionTest {
 
-    private HelloSolution hello;
+    private HelloSolution greeting;
 
     @Before
     public void setup(){
-        hello = new HelloSolution();
+        greeting = new HelloSolution();
     }
 
     @Test
     public void helloTest() {
+        assertEquals("Hello World", greeting.hello("John"));
     }
 }
