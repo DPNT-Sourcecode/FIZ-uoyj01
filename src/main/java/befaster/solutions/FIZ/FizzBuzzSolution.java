@@ -22,25 +22,37 @@ public class FizzBuzzSolution {
             if (number % 15 == 0) {
                 output = "fizz buzz";
             }
-            if (allDigitsInNumberAreSame(number)) {
-                String deluxeType;
-                if(number % 2 == 0) {
-                    deluxeType = "deluxe";
-                } else {
-                    deluxeType = "fake deluxe";
-                }
+//            if (allDigitsInNumberAreSame(number)) {
+//                String deluxeType;
+//                if(number % 2 == 0) {
+//                    deluxeType = "deluxe";
+//                } else {
+//                    deluxeType = "fake deluxe";
+//                }
+//                if (!output.isEmpty()) {
+//                    output = output + " " + deluxeType;
+//                } else {
+//                    output = deluxeType;
+//                }
+//            }
+            String deluxeType = defineNewDeluxeNumber(number, 3);
+            if (deluxeType == null) {
+                deluxeType = defineNewDeluxeNumber(number, 5);
+            }
+            if (deluxeType != null) {
                 if (!output.isEmpty()) {
                     output = output + " " + deluxeType;
                 } else {
                     output = deluxeType;
                 }
             }
-            if (output.isEmpty()) {
-                output = inputString;
-            }
+        
+        if (output.isEmpty()) {
+            output = inputString;
         }
-        return output;
     }
+        return output;
+}
 
     public boolean checkInputLessThanMax(int input) {
         if (input <= 9999) {
@@ -59,7 +71,7 @@ public class FizzBuzzSolution {
     public boolean allDigitsInNumberAreSame(int input) {
         List<Integer> digits = new ArrayList<>();
         int prev = -1;
-        if (input < 10){
+        if (input < 10) {
             return false;
         }
         while (input > 0) {
@@ -82,5 +94,17 @@ public class FizzBuzzSolution {
             }
         }
         return true;
+    }
+
+    public String defineNewDeluxeNumber(int number, int divisor) {
+        String inputString = number + "";
+        if (number % divisor == 0 && inputString.contains(divisor + "")) {
+            if (number % 2 == 0) {
+                return "deluxe";
+            } else {
+                return "fake deluxe";
+            }
+        }
+        return null;
     }
 }
