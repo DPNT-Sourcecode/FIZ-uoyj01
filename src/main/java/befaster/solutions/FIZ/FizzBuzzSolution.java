@@ -11,7 +11,11 @@ public class FizzBuzzSolution {
             if (number % 3 == 0 || inputString.contains("3")) {
                 output = "fizz";
             } else if (number % 5 == 0 || inputString.contains("5")) {
-                output = "buzz";
+                if (!output.isEmpty()) {
+                    output = output + " buzz";
+                } else {
+                    output = "buzz";
+                }
             } else {
                 output = number + "";
             }
@@ -36,3 +40,4 @@ public class FizzBuzzSolution {
         return false;
     }
 }
+
