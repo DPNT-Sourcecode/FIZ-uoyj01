@@ -60,7 +60,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputHasAllSameDigits() {
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(777));
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(111));
     }
 
 }
