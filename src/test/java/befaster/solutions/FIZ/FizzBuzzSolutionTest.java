@@ -59,18 +59,13 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void checkNumberIsDeluxe() {
-        assertEquals(true, fizzBuzzSolution.allDigitsInNumberAreSame(11));
-    }
-
-    @Test
     public void checkInputHasAllSameDigitsAsTwoButNotDeluxe() {
         assertNotEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(222));
     }
 
     @Test
     public void checkNuberIsDivisibleAndHasTheSameDigitAtLeastOnce() {
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.defineNewDeluxeNumber(333, 3));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(333));
     }
 
     @Test
@@ -88,3 +83,4 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(333));
     }
 }
+
