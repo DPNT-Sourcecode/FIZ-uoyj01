@@ -14,4 +14,11 @@ public class FizzBuzzSolution {
         }
         return false;
     }
+
+    public boolean checkInputMoreThanZero(int input) {
+        if(input > 0) {
+            return true;
+        }
+        return false;
+    }
 }

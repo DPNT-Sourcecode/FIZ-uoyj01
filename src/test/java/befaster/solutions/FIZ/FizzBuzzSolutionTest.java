@@ -16,5 +16,9 @@ public class FizzBuzzSolutionTest {
     public void checkInputLessThanHundred() throws Exception {
         assertEquals(true, fizzBuzzSolution.checkInputLessThanMax(1));
     }
+@Test
+    public void checkInputMoreThanZero() throws Exception {
+        assertEquals(true, fizzBuzzSolution.checkInputMoreThanZero(1));
+    }
 
 }
