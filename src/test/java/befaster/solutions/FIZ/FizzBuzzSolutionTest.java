@@ -55,7 +55,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputHasDigitThreeAndFive() {
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(53));
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(546));
     }
 
 }
