@@ -1,7 +1,5 @@
 package befaster.solutions.FIZ;
 
-import befaster.runner.SolutionNotImplementedException;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +22,13 @@ public class FizzBuzzSolution {
             if (number % 15 == 0) {
                 output = "fizz buzz";
             }
+            if (numberIsDeluxe(number)) {
+                if (!output.isEmpty()) {
+                    output = output + " deluxe";
+                } else {
+                    output = "deluxe";
+                }
+            }
             if (output.isEmpty()) {
                 output = inputString;
             }
@@ -45,7 +50,7 @@ public class FizzBuzzSolution {
         return false;
     }
 
-    public boolean checkIfNumberIsDeluxe(int input) {
+    public boolean numberIsDeluxe(int input) {
         List<Integer> digits = new ArrayList<>();
         int prev = -1;
         if (input < 10){
