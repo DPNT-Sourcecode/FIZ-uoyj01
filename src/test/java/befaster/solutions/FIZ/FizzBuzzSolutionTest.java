@@ -63,4 +63,14 @@ public class FizzBuzzSolutionTest {
         assertEquals(true, fizzBuzzSolution.numberIsDeluxe(11));
     }
 
+    @Test
+    public void checkInputHasAllSameDigitsAsThree() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(333));
+    }
+
+    @Test
+    public void checkInputHasAllSameDigitsAsFive() {
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+    }
+
 }
