@@ -28,4 +28,14 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(6));
     }
 
+    @Test
+    public void checkInputMultipleOfFive() {
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+    }
+
+    @Test
+    public void checkInputMultipleOfBothThreeAndFive() {
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+    }
+
 }

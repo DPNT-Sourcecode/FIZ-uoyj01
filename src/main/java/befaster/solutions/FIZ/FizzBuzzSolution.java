@@ -7,8 +7,13 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         String output = "";
         if (checkInputMoreThanZero(number) && checkInputLessThanMax(number)) {
-            if(number % 3 == 0){
+            if (number % 3 == 0) {
                 output = "fizz";
+            } else if (number % 5 == 0) {
+                output = "buzz";
+            }
+            if(number % 15 == 0) {
+                output = "fizz buzz";
             }
         }
         return output;
