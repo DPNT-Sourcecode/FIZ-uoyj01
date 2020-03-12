@@ -59,7 +59,7 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void checkInputHasAllSameDigits() {
+    public void checkNumberIsDeluxe() {
         assertEquals(true, fizzBuzzSolution.numberIsDeluxe(11));
     }
 
@@ -70,7 +70,12 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputHasAllSameDigitsAsFive() {
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+    }
+
+    @Test
+    public void checkInputIsJustADexuleNumber() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(888));
     }
 
 }
