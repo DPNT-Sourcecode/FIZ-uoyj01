@@ -44,13 +44,18 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void checkInputHasNumberThree() {
+    public void checkInputHasDigitThree() {
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
     }
 
     @Test
-    public void checkInputHasNumberFive() {
+    public void checkInputHasDigitFive() {
         assertEquals("buzz", fizzBuzzSolution.fizzBuzz(52));
+    }
+
+    @Test
+    public void checkInputHasDigitThreeAndFive() {
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(53));
     }
 
 }

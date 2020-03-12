@@ -6,15 +6,16 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         String output = "";
+        String inputString = number + "";
         if (checkInputMoreThanZero(number) && checkInputLessThanMax(number)) {
-            if (number % 3 == 0 || (number + "").contains("3")) {
+            if (number % 3 == 0 || inputString.contains("3")) {
                 output = "fizz";
-            } else if (number % 5 == 0 || (number + "").contains("5")) {
+            } else if (number % 5 == 0 || inputString.contains("5")) {
                 output = "buzz";
             } else {
                 output = number + "";
             }
-            if (number % 15 == 0) {
+            if (number % 15 == 0 || (inputString.contains("3") && inputString.contains("5"))) {
                 output = "fizz buzz";
             }
         }
