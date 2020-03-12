@@ -17,11 +17,12 @@ public class FizzBuzzSolution {
                 } else {
                     output = "buzz";
                 }
-            } else {
-                output = number + "";
             }
-            if (number % 15 == 0 || (inputString.contains("3") && inputString.contains("5"))) {
+            if (number % 15 == 0) {
                 output = "fizz buzz";
+            }
+            if (output.isEmpty()) {
+                output = inputString;
             }
         }
         return output;
@@ -41,5 +42,6 @@ public class FizzBuzzSolution {
         return false;
     }
 }
+
 
 
