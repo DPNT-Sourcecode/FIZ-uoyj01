@@ -34,12 +34,11 @@ public class SumSolutionTest {
 
     @Test(expected = Exception.class)
     public void throwExceptionWhenInputNotPositive() throws Exception {
-        assertEquals(1, sum.checkInputIsPositive(1));
+        assertEquals(1, sum.checkInputIsPositive(-1));
+    }
+
+    @Test(expected = Exception.class)
+    public void throwExceptionWhenInputGreaterThan100() throws Exception {
+        assertEquals(1, sum.checkInputLessThanHundred(101));
     }
 }
-
-
-
-
-
-
