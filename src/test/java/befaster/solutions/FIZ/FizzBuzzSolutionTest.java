@@ -48,4 +48,9 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
     }
 
+    @Test
+    public void checkInputHasNumberFive() {
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(52));
+    }
+
 }
