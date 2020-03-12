@@ -10,7 +10,8 @@ public class FizzBuzzSolution {
         if (checkInputMoreThanZero(number) && checkInputLessThanMax(number)) {
             if (number % 3 == 0 || inputString.contains("3")) {
                 output = "fizz";
-            } else if (number % 5 == 0 || inputString.contains("5")) {
+            }
+            if (number % 5 == 0 || inputString.contains("5")) {
                 if (!output.isEmpty()) {
                     output = output + " buzz";
                 } else {
@@ -40,4 +41,5 @@ public class FizzBuzzSolution {
         return false;
     }
 }
+
 
