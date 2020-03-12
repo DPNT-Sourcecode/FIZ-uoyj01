@@ -64,13 +64,18 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void checkInputHasAllSameDigitsAsTwo() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(222));
+    }
+
+    @Test
     public void checkInputHasAllSameDigitsAsThree() {
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(333));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(333));
     }
 
     @Test
     public void checkInputHasAllSameDigitsAsFive() {
-        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
     }
 
     @Test
