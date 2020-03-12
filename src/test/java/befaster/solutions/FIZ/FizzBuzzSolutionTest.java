@@ -7,8 +7,9 @@ import static org.junit.Assert.*;
 
 public class FizzBuzzSolutionTest {
     private FizzBuzzSolution fizzBuzzSolution;
+
     @Before
-    public void setup(){
+    public void setup() {
         fizzBuzzSolution = new FizzBuzzSolution();
     }
 
@@ -16,9 +17,15 @@ public class FizzBuzzSolutionTest {
     public void checkInputLessThanHundred() throws Exception {
         assertEquals(true, fizzBuzzSolution.checkInputLessThanMax(1));
     }
-@Test
+
+    @Test
     public void checkInputMoreThanZero() throws Exception {
         assertEquals(true, fizzBuzzSolution.checkInputMoreThanZero(1));
+    }
+
+    @Test
+    public void checkInputMultipleOfThree(){
+        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(6));
     }
 
 }
