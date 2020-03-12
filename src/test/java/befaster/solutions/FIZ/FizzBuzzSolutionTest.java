@@ -30,7 +30,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputMultipleOfFive() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(20));
     }
 
     @Test
@@ -70,7 +70,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkNuberIsDivisibleAndHasTheSameDigitAtLeastOnce() {
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.defineNewDeluxeNumber(333));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.defineNewDeluxeNumber(333, 3));
     }
 
     @Test

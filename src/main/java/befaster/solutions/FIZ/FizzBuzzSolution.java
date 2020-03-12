@@ -46,7 +46,7 @@ public class FizzBuzzSolution {
                     output = deluxeType;
                 }
             }
-        
+
         if (output.isEmpty()) {
             output = inputString;
         }
@@ -108,3 +108,4 @@ public class FizzBuzzSolution {
         return null;
     }
 }
+
