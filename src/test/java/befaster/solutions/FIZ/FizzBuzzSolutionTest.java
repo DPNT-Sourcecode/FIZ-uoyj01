@@ -35,7 +35,12 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void checkInputMultipleOfBothThreeAndFive() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(60));
+    }
+
+    @Test
+    public void checkInputNotMultipleOfBothThreeAndFive() {
+        assertEquals("7", fizzBuzzSolution.fizzBuzz(7));
     }
 
 }

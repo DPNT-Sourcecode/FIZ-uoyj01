@@ -11,6 +11,8 @@ public class FizzBuzzSolution {
                 output = "fizz";
             } else if (number % 5 == 0) {
                 output = "buzz";
+            } else {
+                output = number + "";
             }
             if(number % 15 == 0) {
                 output = "fizz buzz";
